@@ -36,7 +36,7 @@ const init = () => {
     ];
 }
 
-export const useTodo = () => {
+export const useTodos = () => {
 
     const [todos, dispatch] = useReducer(todoReducer, [], init);
 
