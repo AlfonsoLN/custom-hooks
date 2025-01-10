@@ -1,39 +1,8 @@
 import { useEffect, useReducer } from 'react';
-import { todoReducer } from '../08-useReducer/todoReducer';
+import { todoReducer } from './todoReducerr';
 
 const init = () => {
-    return JSON.parse(localStorage.getItem('todos')) || [
-        {
-            id: new Date().getTime() * 1.1,
-            description: 'Obtener la gema del Poder 🟣',
-            done: false,
-        },
-        {
-            id: new Date().getTime() * 1.2,
-            description: 'Obtener la gema del Espacio 🔵',
-            done: false,
-        },
-        {
-            id: new Date().getTime() * 1.3,
-            description: 'Obtener la gema del Realidad 🔴',
-            done: false,
-        },
-        {
-            id: new Date().getTime() * 1.4,
-            description: 'Obtener la gema del Alma 🟠',
-            done: false,
-        },
-        {
-            id: new Date().getTime() * 1.5,
-            description: 'Obtener la gema del Tiempo 🟢',
-            done: false,
-        },
-        {
-            id: new Date().getTime() * 1.6,
-            description: 'Obtener la gema del Mente 🟡',
-            done: false,
-        },
-    ];
+    return JSON.parse(localStorage.getItem('todos')) || [];
 }
 
 export const useTodos = () => {
